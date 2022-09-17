@@ -64,7 +64,7 @@ extension LoginView {
             trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 1),
             bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 1)
         ])
-
+        
         deviderView.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
 }
