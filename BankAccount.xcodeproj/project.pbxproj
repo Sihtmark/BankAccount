@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		A057686628D077B60068B3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A057686528D077B60068B3FE /* Assets.xcassets */; };
 		A057686928D077B60068B3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A057686728D077B60068B3FE /* LaunchScreen.storyboard */; };
 		A057687628D07CC00068B3FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057687528D07CC00068B3FE /* LoginView.swift */; };
+		A0A92C7528D7539600164C4C /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A92C7428D7539600164C4C /* DecimalUtils.swift */; };
+		A0A92C7728D7550D00164C4C /* CurencyFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A92C7628D7550D00164C4C /* CurencyFormater.swift */; };
 		A0DEE04B28D1DD1800B2B5EB /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE04A28D1DD1800B2B5EB /* OnboardingContainerViewController.swift */; };
 		A0DEE04D28D3524C00B2B5EB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE04C28D3524C00B2B5EB /* OnboardingViewController.swift */; };
 		A0DEE04F28D43A9A00B2B5EB /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE04E28D43A9A00B2B5EB /* DummyViewController.swift */; };
@@ -35,6 +37,8 @@
 		A057686828D077B60068B3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A057686A28D077B60068B3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A057687528D07CC00068B3FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A0A92C7428D7539600164C4C /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
+		A0A92C7628D7550D00164C4C /* CurencyFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurencyFormater.swift; sourceTree = "<group>"; };
 		A0DEE04A28D1DD1800B2B5EB /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		A0DEE04C28D3524C00B2B5EB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A0DEE04E28D43A9A00B2B5EB /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			children = (
 				A0DEE05128D4457200B2B5EB /* LocalState.swift */,
 				A0F33F6428D5EE990048C435 /* UIViewController+Utils.swift */,
+				A0A92C7428D7539600164C4C /* DecimalUtils.swift */,
+				A0A92C7628D7550D00164C4C /* CurencyFormater.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,7 +192,7 @@
 				};
 			};
 			buildConfigurationList = A057685428D077B50068B3FE /* Build configuration list for PBXProject "BankAccount" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -226,7 +232,9 @@
 				A0DEE05228D4457200B2B5EB /* LocalState.swift in Sources */,
 				A011743528D6EA5A006364E0 /* AccountSummaryHeaderView.swift in Sources */,
 				A0DEE04F28D43A9A00B2B5EB /* DummyViewController.swift in Sources */,
+				A0A92C7528D7539600164C4C /* DecimalUtils.swift in Sources */,
 				A057686128D077B50068B3FE /* LoginViewController.swift in Sources */,
+				A0A92C7728D7550D00164C4C /* CurencyFormater.swift in Sources */,
 				A011743B28D6F9B1006364E0 /* AccountSummaryCell.swift in Sources */,
 				A0DEE04D28D3524C00B2B5EB /* OnboardingViewController.swift in Sources */,
 				A0F33F6728D5FABF0048C435 /* MainViewController.swift in Sources */,
@@ -300,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
