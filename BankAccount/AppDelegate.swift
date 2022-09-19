@@ -88,9 +88,3 @@ extension AppDelegate: LogoutDelegate {
         setRootViewController(loginViewController)
     }
 }
-
-extension AppDelegate {
-    func lknijsd() {
-        
-    }
-}
