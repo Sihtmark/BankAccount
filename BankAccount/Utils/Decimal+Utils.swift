@@ -1,5 +1,5 @@
 //
-//  DecimalUtils.swift
+//  Decimal+Utils.swift
 //  BankAccount
 //
 //  Created by Sergei Poluboiarinov on 18.09.2022.
