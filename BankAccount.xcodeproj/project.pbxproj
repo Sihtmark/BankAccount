@@ -16,6 +16,7 @@
 		A057686628D077B60068B3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A057686528D077B60068B3FE /* Assets.xcassets */; };
 		A057686928D077B60068B3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A057686728D077B60068B3FE /* LaunchScreen.storyboard */; };
 		A057687628D07CC00068B3FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057687528D07CC00068B3FE /* LoginView.swift */; };
+		A09F67F928DDD20A00B552E4 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09F67F828DDD20A00B552E4 /* ShakeyBellView.swift */; };
 		A0A92C7528D7539600164C4C /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A92C7428D7539600164C4C /* Decimal+Utils.swift */; };
 		A0A92C7728D7550D00164C4C /* CurencyFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A92C7628D7550D00164C4C /* CurencyFormater.swift */; };
 		A0A92C7F28D84D9700164C4C /* BankeyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A92C7E28D84D9700164C4C /* BankeyUnitTests.swift */; };
@@ -51,6 +52,7 @@
 		A057686828D077B60068B3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A057686A28D077B60068B3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A057687528D07CC00068B3FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A09F67F828DDD20A00B552E4 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		A0A92C7428D7539600164C4C /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		A0A92C7628D7550D00164C4C /* CurencyFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurencyFormater.swift; sourceTree = "<group>"; };
 		A0A92C7C28D84D9700164C4C /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,19 +129,20 @@
 				A0DEE04928D1DCD600B2B5EB /* Onboarding */,
 				A0F33F6828D61F730048C435 /* AccountSummary */,
 				A0DEE05028D4455400B2B5EB /* Utils */,
-				A057687228D07ACE0068B3FE /* New Group */,
+				A09F67F728DDD1A600B552E4 /* Components */,
+				A057687228D07ACE0068B3FE /* Files */,
 			);
 			path = BankAccount;
 			sourceTree = "<group>";
 		};
-		A057687228D07ACE0068B3FE /* New Group */ = {
+		A057687228D07ACE0068B3FE /* Files */ = {
 			isa = PBXGroup;
 			children = (
 				A057686528D077B60068B3FE /* Assets.xcassets */,
 				A057686728D077B60068B3FE /* LaunchScreen.storyboard */,
 				A057686A28D077B60068B3FE /* Info.plist */,
 			);
-			name = "New Group";
+			name = Files;
 			sourceTree = "<group>";
 		};
 		A057687428D07C980068B3FE /* Login */ = {
@@ -150,6 +153,14 @@
 				A0DEE04E28D43A9A00B2B5EB /* DummyViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A09F67F728DDD1A600B552E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A09F67F828DDD20A00B552E4 /* ShakeyBellView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A0A92C7D28D84D9700164C4C /* BankeyUnitTests */ = {
@@ -303,6 +314,7 @@
 				A057686128D077B50068B3FE /* LoginViewController.swift in Sources */,
 				A0A92C8628D87A9000164C4C /* NSNotificationName.swift in Sources */,
 				A0A92C7728D7550D00164C4C /* CurencyFormater.swift in Sources */,
+				A09F67F928DDD20A00B552E4 /* ShakeyBellView.swift in Sources */,
 				A011743B28D6F9B1006364E0 /* AccountSummaryCell.swift in Sources */,
 				A0DEE04D28D3524C00B2B5EB /* OnboardingViewController.swift in Sources */,
 				A0F33F6728D5FABF0048C435 /* MainViewController.swift in Sources */,
