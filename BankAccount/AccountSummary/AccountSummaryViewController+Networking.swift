@@ -10,7 +10,7 @@ import UIKit
 
 enum NetworkError: Error {
     case serverError
-    case DecodingError
+    case decodingError
 }
 
 struct Profile: Codable {
@@ -40,7 +40,7 @@ extension AccountSummaryViewController {
                     let profile = try JSONDecoder().decode(Profile.self, from: data)
                     completion(.success(profile))
                 } catch {
-                    completion(.failure(.DecodingError))
+                    completion(.failure(.decodingError))
                 }
             }
         }.resume()
@@ -73,7 +73,7 @@ extension AccountSummaryViewController {
                     let accounts = try decoder.decode([Account].self, from: data)
                     completion(.success(accounts))
                 } catch {
-                    completion(.failure(.DecodingError))
+                    completion(.failure(.decodingError))
                 }
             }
         }.resume()

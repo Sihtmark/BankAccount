@@ -16,6 +16,8 @@
 		A057686628D077B60068B3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A057686528D077B60068B3FE /* Assets.xcassets */; };
 		A057686928D077B60068B3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A057686728D077B60068B3FE /* LaunchScreen.storyboard */; };
 		A057687628D07CC00068B3FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057687528D07CC00068B3FE /* LoginView.swift */; };
+		A0775CB428ED64FF002FAC5D /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0775CB328ED64FF002FAC5D /* AccountTests.swift */; };
+		A0775CB628ED77C1002FAC5D /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0775CB528ED77C1002FAC5D /* ProfileTests.swift */; };
 		A084F71528EB303900984392 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084F71428EB303900984392 /* Date+Utils.swift */; };
 		A09F67F928DDD20A00B552E4 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09F67F828DDD20A00B552E4 /* ShakeyBellView.swift */; };
 		A0A92C7528D7539600164C4C /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A92C7428D7539600164C4C /* Decimal+Utils.swift */; };
@@ -54,6 +56,8 @@
 		A057686828D077B60068B3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A057686A28D077B60068B3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A057687528D07CC00068B3FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A0775CB328ED64FF002FAC5D /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		A0775CB528ED77C1002FAC5D /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		A084F71428EB303900984392 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		A09F67F828DDD20A00B552E4 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		A0A92C7428D7539600164C4C /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
@@ -159,6 +163,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		A0775CB128ED6484002FAC5D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0A92C7E28D84D9700164C4C /* BankeyUnitTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0775CB228ED64AB002FAC5D /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				A0775CB528ED77C1002FAC5D /* ProfileTests.swift */,
+				A0775CB328ED64FF002FAC5D /* AccountTests.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 		A09F67F728DDD1A600B552E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +191,8 @@
 		A0A92C7D28D84D9700164C4C /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0A92C7E28D84D9700164C4C /* BankeyUnitTests.swift */,
+				A0775CB228ED64AB002FAC5D /* AccountSummary */,
+				A0775CB128ED6484002FAC5D /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -336,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0775CB628ED77C1002FAC5D /* ProfileTests.swift in Sources */,
 				A0A92C7F28D84D9700164C4C /* BankeyUnitTests.swift in Sources */,
+				A0775CB428ED64FF002FAC5D /* AccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
