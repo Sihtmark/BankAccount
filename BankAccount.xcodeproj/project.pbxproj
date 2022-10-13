@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,8 @@
 		A0DEE04D28D3524C00B2B5EB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE04C28D3524C00B2B5EB /* OnboardingViewController.swift */; };
 		A0DEE04F28D43A9A00B2B5EB /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE04E28D43A9A00B2B5EB /* DummyViewController.swift */; };
 		A0DEE05228D4457200B2B5EB /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE05128D4457200B2B5EB /* LocalState.swift */; };
+		A0DFD7C728F8209F000ABCF7 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFD7C628F8209F000ABCF7 /* ProfileManager.swift */; };
+		A0DFD7CC28F83E3C000ABCF7 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFD7CB28F83E3C000ABCF7 /* AccountSummaryViewControllerTests.swift */; };
 		A0F33F6528D5EE990048C435 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F33F6428D5EE990048C435 /* UIViewController+Utils.swift */; };
 		A0F33F6728D5FABF0048C435 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F33F6628D5FABF0048C435 /* MainViewController.swift */; };
 		A0F33F6A28D61FC80048C435 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F33F6928D61FC80048C435 /* AccountSummaryViewController.swift */; };
@@ -73,6 +75,8 @@
 		A0DEE04C28D3524C00B2B5EB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A0DEE04E28D43A9A00B2B5EB /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		A0DEE05128D4457200B2B5EB /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		A0DFD7C628F8209F000ABCF7 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		A0DFD7CB28F83E3C000ABCF7 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		A0F33F6428D5EE990048C435 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		A0F33F6628D5FABF0048C435 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A0F33F6928D61FC80048C435 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			children = (
 				A0775CB528ED77C1002FAC5D /* ProfileTests.swift */,
 				A0775CB328ED64FF002FAC5D /* AccountTests.swift */,
+				A0DFD7CB28F83E3C000ABCF7 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -226,6 +231,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		A0DFD7C528F8205C000ABCF7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A0DFD7C628F8209F000ABCF7 /* ProfileManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		A0F33F6828D61F730048C435 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 				A0F432E228EC5BBA00E2FC57 /* AccountSummaryViewController+Networking.swift */,
 				A011743928D6F96B006364E0 /* Cells */,
 				A011743828D6F928006364E0 /* Header */,
+				A0DFD7C528F8205C000ABCF7 /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -295,7 +309,7 @@
 				};
 			};
 			buildConfigurationList = A057685428D077B50068B3FE /* Build configuration list for PBXProject "BankAccount" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -341,6 +355,7 @@
 				A0F33F6528D5EE990048C435 /* UIViewController+Utils.swift in Sources */,
 				A03AE3D628F315FF007278D6 /* SkeletonCell.swift in Sources */,
 				A084F71528EB303900984392 /* Date+Utils.swift in Sources */,
+				A0DFD7C728F8209F000ABCF7 /* ProfileManager.swift in Sources */,
 				A057687628D07CC00068B3FE /* LoginView.swift in Sources */,
 				A0DEE05228D4457200B2B5EB /* LocalState.swift in Sources */,
 				A011743528D6EA5A006364E0 /* AccountSummaryHeaderView.swift in Sources */,
@@ -369,6 +384,7 @@
 				A0775CB628ED77C1002FAC5D /* ProfileTests.swift in Sources */,
 				A0A92C7F28D84D9700164C4C /* BankeyUnitTests.swift in Sources */,
 				A0775CB428ED64FF002FAC5D /* AccountTests.swift in Sources */,
+				A0DFD7CC28F83E3C000ABCF7 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +538,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +566,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +589,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYGMJ959XP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sihtmark.BankeyUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,7 +609,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYGMJ959XP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sihtmark.BankeyUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

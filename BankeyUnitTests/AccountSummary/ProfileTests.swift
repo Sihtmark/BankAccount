@@ -11,6 +11,7 @@ import XCTest
 @testable import BankAccount
 
 class ProfileTests: XCTestCase {
+    
     override func setUp() {
         super.setUp()
     }
@@ -18,9 +19,9 @@ class ProfileTests: XCTestCase {
     func testCanParse() throws {
         let json = """
         {
-            "id": "1",
-            "firstName": "Kevin",
-            "lastName": "Flynn",
+        "id": "1",
+        "first_name": "Kevin",
+        "last_name": "Flynn",
         }
         """
         
@@ -30,6 +31,5 @@ class ProfileTests: XCTestCase {
         XCTAssertEqual(result.id, "1")
         XCTAssertEqual(result.firstName, "Kevin")
         XCTAssertEqual(result.lastName, "Flynn")
-        
     }
 }
